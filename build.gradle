@@ -1,0 +1,8 @@
+allprojects{
+    apply plugin: 'idea'
+}
+
+project(':backend') {
+    apply plugin: 'java'
+    processResources.dependsOn(':frontend:build')
+}
