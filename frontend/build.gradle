@@ -19,6 +19,7 @@ task npmClean(type: Delete) {
 	delete "${webDir}/node_modules"
 	delete "${webDir}/dist"
 	delete "${webDir}/coverage"
+  delete "${webDir}/build"
 }
 
 // clean task for npm
